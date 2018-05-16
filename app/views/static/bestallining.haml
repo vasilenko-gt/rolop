@@ -1,33 +1,22 @@
-#welcome-visa
+#order-code
   .container
-    %h1 Välkommen till Visa MMS
+    %h1 Beställning av ny kod
     %br
-    %p Du har fått ett sms om att någon skickat ett mms till dig som inte kan visas i din telefon.
+    %p Fyll i ditt mobilnummer (format +467XXXXXXXX) så skickar vi en ny kod till dig i ett sms.
     %br
-    %p Fyll i ditt mobilnummer (format +467XXXXXXXX) och koden som du fick i sms:et så kan du se
-    %p ditt mms här istället.
+    %p Observera att mms endast lagras här i 10 dagar. Om din kod är mer än 10 dagar gammal finns
+    %p ditt mms tyvärr inte kvar.
     %br
     %br
     .row
       .col-md-3.col-xs-12
         %label Mobilnummer
-        .error-text
-          .row
-            .col-md-1
-              = image_tag('warning_red.png')
-            .col-md-10
-              %p Error message. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam iaculis
-        %input.form-control{placeholder: '+46 XXX XX XX'}
-    %br
-    .row
-      .col-md-3.col-xs-12
-        %label Kod
         %input.form-control
     %br
-    %button.btn.btn-default.btn-purple.btn-modal logga in
+    %button.btn.btn-default.btn-purple.btn-modal Skicka
     %br
     %br
-    %p.text-purple Jag har glömt min kod
+    %p.text-purple Tillbaka
 
   .modal.fade.bd-example-modal-lg{"aria-hidden" => "true", "aria-labelledby" => "myLargeModalLabel", :role => "dialog", :tabindex => "-1"}
     .modal-dialog.modal-lg

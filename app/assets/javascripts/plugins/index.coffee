@@ -1,6 +1,13 @@
+#= require jquery/jquery
 #= require jquery-ui
 #= require jquery_ujs
 #= require jquery.remotipart
 #= require moment
+#= require fullcalendar
+#= require fullcalendar/locale-all
+#= require fullcalendar-scheduler
 #= require turbolinks
 #= require bootstrap
+#= require toastr
+#= require tempusdominus-bootstrap-4.js
+#= require chartjs

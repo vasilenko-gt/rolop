@@ -11,6 +11,7 @@ Rails.application.routes.draw do
 
   get 'valkomen',           to: 'static#valkomen'
   get 'valkomen_html',      to: 'static#valkomen_html'
+  get 'bestallining',       to: 'static#bestallining'
   get 'bestallining_html',  to: 'static#bestallining_html'
 
 end

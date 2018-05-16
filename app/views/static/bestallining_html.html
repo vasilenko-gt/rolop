@@ -15,9 +15,31 @@
             </div>
         </div>
         <br>
-        <button class="btn btn-default btn-purple">Skicka</button>
+        <button class="btn btn-default btn-purple btn-modal">Skicka</button>
         <br>
         <br>
         <p class="text-purple">Tillbaka</p>
     </div>
+    <div aria-labelledby="myLargeModalLabel" class="modal fade bd-example-modal-lg" role="dialog" tabindex="-1" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="modal-title">beställning av ny kod</p>
+                    <button aria-label="Close" class="close" data-dismiss="modal"><img alt="Icon" src="/assets/close_white.png" /></button>
+                </div>
+                <div class="modal-body">
+                    <img alt="Icon" class="check" src="/assets/check_1.png" />
+                    <div class="modal-text">
+                        <h2>En kod har skickats</h2>
+                        <p>En ny kod har skickats till din mobiltelefon. Klicka Ok för att gå tillbaka till inloggningssidan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+<script>
+    $('.btn-modal').click(function() {
+        $('.modal').modal('show')
+    })
+</script>
