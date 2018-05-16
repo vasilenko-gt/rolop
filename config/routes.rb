@@ -9,9 +9,7 @@ Rails.application.routes.draw do
 
   root 'static#home'
 
-  get 'valkomen',           to: 'static#valkomen'
-  get 'valkomen_html',      to: 'static#valkomen_html'
-  get 'bestallining',       to: 'static#bestallining'
-  get 'bestallining_html',  to: 'static#bestallining_html'
+  get 'welcome_visa', to: 'static#welcome_visa'
+  get 'order_code',   to: 'static#order_code'
 
 end

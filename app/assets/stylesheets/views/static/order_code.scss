@@ -24,24 +24,6 @@
     padding: 10px;
   }
 
-  .text-purple {
-    color: #990AE3;
-    text-decoration: underline;
-  }
-
-  .btn-purple {
-    height: 50px;
-    width: 120px;
-    border-radius: 25px;
-    font-size: 14px;
-    font-family: HelveticaNeue-Bold;
-    color: #FFFFFF;
-    background: #990AE3;
-    letter-spacing: 0;
-    line-height: 41px;
-    text-transform: uppercase;
-  }
-
   .modal {
     .modal-dialog {
       .modal-header {
@@ -93,58 +75,6 @@
           }
         }
       }
-    }
-  }
-
-  .error-text {
-    display: none;
-
-    img {
-      height: 16px;
-      width: 16px;
-    }
-    p {
-      font-family: HelveticaNeue;
-      font-size: 16px;
-      color: #E4175C;
-      letter-spacing: 0;
-      line-height: 24px;
-    }
-  }
-
-  .error {
-    border-color: #E4175C;
-  }
-
-  ::-webkit-input-placeholder {
-    color: #969696;
-  }
-}
-
-
-@media (max-width: 767px) {
-  h1 {
-    font-family: HelveticaNeue-Bold;
-    font-size: 30px !important;
-    line-height: 30px !important;
-  }
-
-  .modal {
-    .check {
-      width: 57px !important;
-      height: 57px !important;
-    }
-
-    .modal-title {
-      margin-top: 30px;
-      font-size: 24px !important;
-      line-height: 24px !important;
-    }
-
-    h2 {
-      font-family: HelveticaNeue;
-      font-size: 22px !important;
-      line-height: 24px !important;
     }
   }
 }

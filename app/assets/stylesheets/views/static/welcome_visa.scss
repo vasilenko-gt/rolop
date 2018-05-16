@@ -1,0 +1,46 @@
+#welcome-visa {
+  margin: 30px 0px 10px 0px;
+
+  h1 {
+    font-family: Helvetica;
+    font-size: 40px;
+    color: #990AE3;
+    letter-spacing: 0;
+    line-height: 40px;
+    text-transform: uppercase;
+  }
+
+  p {
+    margin-bottom: 0px;
+    font-family: HelveticaNeue;
+    font-size: 16px;
+    color: #222222;
+    letter-spacing: 0;
+    line-height: 24px;
+  }
+
+  .form-control {
+    border-radius: 0px;
+    padding: 10px;
+  }
+
+  .error-text {
+    display: none;
+
+    img {
+      height: 16px;
+      width: 16px;
+    }
+    p {
+      font-family: HelveticaNeue;
+      font-size: 16px;
+      color: #E4175C;
+      letter-spacing: 0;
+      line-height: 24px;
+    }
+  }
+
+  .error {
+    border-color: #E4175C;
+  }
+}
