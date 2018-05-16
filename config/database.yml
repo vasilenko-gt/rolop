@@ -1,0 +1,17 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  password: 'Elsa2017'
+
+development:
+  <<: *default
+  database: rolop_development
+
+production:
+  <<: *default
+  database: rolop_production
+
+test:
+  <<: *default
+  database: rolop_test

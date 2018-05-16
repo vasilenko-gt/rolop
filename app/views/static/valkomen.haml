@@ -1,0 +1,36 @@
+#welcome-visa
+  .container
+    %h1 Välkommen till Visa MMS
+    %br
+    %p Du har fått ett sms om att någon skickat ett mms till dig som inte kan visas i din telefon.
+    %br
+    %p Fyll i ditt mobilnummer (format +467XXXXXXXX) och koden som du fick i sms:et så kan du se
+    %p ditt mms här istället.
+    %br
+    %br
+    .row
+      .col-md-3.col-xs-12
+        %label Mobilnummer
+        %input.form-control{placeholder: '+46 XXX XX XX'}
+    %br
+    .row
+      .col-md-3.col-xs-12
+        %label Kod
+        %input.form-control
+    %br
+    %button.btn.btn-default.btn-purple.btn-modal logga in
+    %br
+    %br
+    %p.text-purple Jag har glömt min kod
+
+#modal.modal
+  .modal-dialog
+    .modal-content
+      %button.close{'data-dismiss': 'modal'}
+        %span ×
+      .modal-body
+
+:javascript
+  $('.btn-modal').click(function() {
+    $('#modal').modal('show')
+  })

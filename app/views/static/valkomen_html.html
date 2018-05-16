@@ -1,0 +1,63 @@
+<div id="welcome-visa">
+    <div class="container">
+        <h1>Välkommen till Visa MMS</h1>
+        <br>
+        <p>Du har fått ett sms om att någon skickat ett mms till dig som inte kan visas i din telefon.</p>
+        <br>
+        <p>Fyll i ditt mobilnummer (format +467XXXXXXXX) och koden som du fick i sms:et så kan du se</p>
+        <p>ditt mms här istället.</p>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-3 col-xs-12">
+                <label>Mobilnummer</label>
+                <input class="form-control" placeholder="+46 XXX XX XX">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-3 col-xs-12">
+                <label>Kod</label>
+                <input class="form-control">
+            </div>
+        </div>
+        <br>
+        <button class="btn btn-default btn-purple">logga in</button>
+        <br>
+        <br>
+        <p class="text-purple">Jag har glömt min kod</p>
+    </div>
+</div>
+
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').trigger('focus')
+    })
+</script>
